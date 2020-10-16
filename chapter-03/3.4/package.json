@@ -1,0 +1,40 @@
+{
+  "name": "3.4",
+  "version": "0.0.1",
+  "description": "A Quasar Framework App",
+  "productName": "Quasar App",
+  "cordovaId": "org.cordova.quasar.app",
+  "capacitorId": "",
+  "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.vue src --fix",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.9.9",
+    "aws-amplify": "^3.3.3",
+    "aws-appsync": "^4.0.1",
+    "axios": "^0.20.0",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "quasar": "^1.14.1",
+    "vue-i18n": "^8.22.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^2.1.1",
+    "@vue/eslint-config-airbnb": "^5.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^7.0.1"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}
