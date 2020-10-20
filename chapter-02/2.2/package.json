@@ -1,9 +1,9 @@
 {
   "name": "2.2",
   "version": "0.0.1",
-  "description": "A Quasar Framework App",
-  "productName": "Quasar App",
-  "cordovaId": "org.cordova.quasar.app",
+  "description": "Quasar Chat Application",
+  "productName": "Chat App",
+  "cordovaId": "org.cordova.chat.app",
   "capacitorId": "",
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
   "private": true,
