@@ -4,8 +4,8 @@ import AwsExports from '../aws-exports';
 
 Storage.configure({
   AWSS3: {
-    bucket: AwsConfig.aws_user_files_s3_bucket,
-    region: AwsConfig.aws_user_files_s3_bucket_region,
+    bucket: AwsExports.aws_user_files_s3_bucket,
+    region: AwsExports.aws_user_files_s3_bucket_region,
   },
 });
 
