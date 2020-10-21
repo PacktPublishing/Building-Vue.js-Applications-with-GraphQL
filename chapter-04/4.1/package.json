@@ -1,5 +1,5 @@
 {
-  "name": "3.4",
+  "name": "4.1",
   "version": "0.0.1",
   "description": "Quasar Chat Application",
   "productName": "Chat App",
@@ -27,7 +27,8 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.11.0",
     "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^7.0.1"
+    "eslint-plugin-vue": "^7.0.1",
+    "workbox-webpack-plugin": "^5.1.4"
   },
   "engines": {
     "node": ">= 10.18.1",

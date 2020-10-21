@@ -1,4 +1,4 @@
-# 3.4 - Creating the Messages page of your application
+# 4.1 - Transforming into a PWA application
 
 A Quasar Framework App
 

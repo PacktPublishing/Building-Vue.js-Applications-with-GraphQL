@@ -15,7 +15,7 @@ function setConversations(state, payload) {
 }
 
 function setMessages(state, payload) {
-  const messageIndex = state.messages.findIndex(m => m.id === payload.id);
+  const messageIndex = state.messages.findIndex((m) => m.id === payload.id);
 
   if (messageIndex === -1) {
     state.messages.push(payload);

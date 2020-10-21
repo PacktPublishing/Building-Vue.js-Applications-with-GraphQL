@@ -118,11 +118,14 @@ async function editUser({ commit, state }, {
   try {
     commit(MT.LOADING);
 
-    const updateObject = Object.assign({
+    const updateObject = {
       name: state.name,
       username: state.username,
       avatar: state.avatar,
-    }, { name, username, avatar });
+      name,
+      username,
+      avatar,
+    };
 
     const { data } = await AuthAPI.graphql(graphqlOperation(updateUser,
       { input: { id: state.id, ...updateObject } }));

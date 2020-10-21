@@ -10,16 +10,16 @@ const getConversations = (state, _getters, _rootState, rootGetters) => {
         .associated
         .items
         .reduce((a, c) => [...a, { ...c.user, conversation: conversation.id }], [])
-        .filter(u => u.id !== user);
+        .filter((u) => u.id !== user);
 
       return [...acc, users];
     }, [])
     .flat(Infinity);
 };
-const getChatMessages = state => convId => (state.messages.length ? state.messages
-  .find(m => m.id === convId).messages.items : []);
-const isLoading = state => state.loading;
-const hasError = state => state.error;
+const getChatMessages = (state) => (convId) => (state.messages.length ? state.messages
+  .find((m) => m.id === convId).messages.items : []);
+const isLoading = (state) => state.loading;
+const hasError = (state) => state.error;
 
 export default {
   getConversations,

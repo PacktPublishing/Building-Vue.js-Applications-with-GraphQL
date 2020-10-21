@@ -57,7 +57,7 @@ export default {
     currentMessages() {
       const messages = this.getChatMessages(this.$route.params.id);
       if (!messages.length) return [];
-      return messages.map(m => ({
+      return messages.map((m) => ({
         ...m,
         createdAt: date.formatDate(new Date(parseInt(m.createdAt, 10)), 'YYYY/MM/DD HH:mm:ss'),
       }));

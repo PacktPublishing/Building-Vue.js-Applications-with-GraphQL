@@ -87,8 +87,8 @@ export default {
     ...mapGetters('chat', ['getConversations']),
     contactList() {
       return this.userList
-        .filter(user => this.getConversations
-          .findIndex(u => u.id === user.id) === -1);
+        .filter((user) => this.getConversations
+          .findIndex((u) => u.id === user.id) === -1);
     },
   },
   methods: {
@@ -100,7 +100,7 @@ export default {
       this.pending = true;
       try {
         const users = await this.listAllUsers();
-        this.userList = users.filter(u => u.id !== this.getUser.id);
+        this.userList = users.filter((u) => u.id !== this.getUser.id);
       } catch (e) {
         this.$q.dialog({
           message: e.message,
