@@ -199,7 +199,7 @@ module.exports = function (/* ctx */) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: '4_1',
+        appId: '4_2',
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
