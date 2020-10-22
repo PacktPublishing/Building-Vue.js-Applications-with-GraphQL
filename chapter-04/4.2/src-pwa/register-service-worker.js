@@ -8,9 +8,11 @@ import { Notify } from 'quasar';
 async function clearLocalCache() {
   const cachedFiles = await caches.keys();
 
-  cachedFiles.map(async (file) => {
+  await cachedFiles.map(async (file) => {
     await caches.delete(file);
   });
+
+  window.location.reload();
 }
 
 register(process.env.SERVICE_WORKER_FILE, {

@@ -1,4 +1,4 @@
-# 4.3 - Adding custom PWA installation notification on iOS
+# 4.3 - Adding a custom PWA installation notification on iOS
 
 A Quasar Framework App
 
