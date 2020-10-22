@@ -1,8 +1,17 @@
 import { register } from 'register-service-worker';
+import { Notify } from 'quasar';
 
 // The ready(), registered(), cached(), updatefound() and updated()
 // events passes a ServiceWorkerRegistration instance in their arguments.
 // ServiceWorkerRegistration: https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration
+
+async function clearLocalCache() {
+  const cachedFiles = await caches.keys();
+
+  cachedFiles.map(async (file) => {
+    await caches.delete(file);
+  });
+}
 
 register(process.env.SERVICE_WORKER_FILE, {
   // The registrationOptions object will be passed as the second argument
@@ -11,31 +20,40 @@ register(process.env.SERVICE_WORKER_FILE, {
 
   // registrationOptions: { scope: './' },
 
-  ready(/* registration */) {
-    // console.log('Service worker is active.')
-  },
+  ready(/* registration */) {},
 
-  registered(/* registration */) {
-    // console.log('Service worker has been registered.')
-  },
+  registered(/* registration */) {},
 
-  cached(/* registration */) {
-    // console.log('Content has been cached for offline use.')
-  },
+  cached(/* registration */) {},
 
   updatefound(/* registration */) {
-    // console.log('New content is downloading.')
+    const installKey = 'chatAppInstalled';
+    if (localStorage.getItem(installKey)) {
+      Notify.create({
+        color: 'dark',
+        message: 'An update is being downloaded from the server.',
+      });
+    } else {
+      localStorage.setItem(installKey, '1');
+    }
   },
 
   updated(/* registration */) {
-    // console.log('New content is available; please refresh.')
+    Notify.create({
+      type: 'positive',
+      message: 'The application was updated successfully!',
+      caption: 'Please refresh the page to apply the new update.',
+      actions: [
+        {
+          label: 'Refresh',
+          color: 'white',
+          handler: clearLocalCache,
+        },
+      ],
+    });
   },
 
-  offline() {
-    // console.log('No internet connection found. App is running in offline mode.')
-  },
+  offline() {},
 
-  error(/* err */) {
-    // console.error('Error during service worker registration:', err)
-  },
+  error(/* err */) {},
 });
