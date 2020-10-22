@@ -1,4 +1,4 @@
-# 4.2 - Transforming into a PWA application
+# 4.2 - Creating the application update notification
 
 A Quasar Framework App
 
