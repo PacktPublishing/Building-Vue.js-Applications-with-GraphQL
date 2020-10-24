@@ -1,4 +1,4 @@
-# 4.4 - Creating the Production environment
+# 4.4 - Creating the Production environment and deploying
 
 A Quasar Framework App
 

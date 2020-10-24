@@ -1,4 +1,4 @@
-# 4.5 - Deploying to Production
+# 4.5 - Adding a continuous deployment with GitHub integration
 
 A Quasar Framework App
 
