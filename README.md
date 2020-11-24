@@ -1,2 +1,2 @@
-# Building-Full-Stack-App-with-Vue.js-and-GraphQL
-Building Full Stack App with Vue.js and GraphQL, published by Packt
+Building Vue.js 3 Applications with GraphQL
+Building Vue.js 3 Applications with GraphQL, published by Packt
