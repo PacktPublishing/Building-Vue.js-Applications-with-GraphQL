@@ -1,6 +1,6 @@
 # AWS Amplify Environment and GraphQL
 
-- [_Chapter 1__ - **Data Binding, Events, and Computed Properties**](./chapter-01/)
+- [_Chapter 1_ - **Data Binding, Events, and Computed Properties**](./chapter-01/)
 - [_Chapter 2_ - **Components, Mixins, and Functional Components**](./chapter-02/)
 - [_Chapter 3_ - **AWS Amplify Environment and GraphQL**](./chapter-03/)
 - [_Chapter 4_ - **Creating Custom Application Components and Layouts**](./chapter-04/)
