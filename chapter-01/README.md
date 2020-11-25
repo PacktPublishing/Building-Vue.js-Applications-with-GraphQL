@@ -1,4 +1,5 @@
-# Chapter 1 - Data Binding, Events, and Computed Properties
+### Chapter 1
+# Data Binding, Events, and Computed Properties
 
 - [Creating your first project with Vue CLI](./1_1/)
 - [Creating the "hello world" component](./1_2/)
