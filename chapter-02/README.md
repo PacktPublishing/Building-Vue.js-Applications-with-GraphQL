@@ -1,4 +1,5 @@
-# Chapter 2 - Components, Mixins, and Functional Components
+### Chapter 2 
+# Components, Mixins, and Functional Components
 
 - [Creating a visual template component](./2_1/)
 - [Using slots and named slots to place data inside your components](./2_2/)

@@ -1,4 +1,5 @@
-# Chapter 7 - Transforming your App to PWA and Deploying to the Web
+### Chapter 7
+# Transforming your App to PWA and Deploying to the Web
 
 - [Transforming the application into a PWA](./7_1/)
 - [Creating the application update notification](./7_2/)

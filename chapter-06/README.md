@@ -1,4 +1,5 @@
-# Chapter 6 - Creating Chat and Message Vuex, Pages, and Routes
+### Chapter 6
+# Creating Chat and Message Vuex, Pages, and Routes
 
 - [Creating GraphQL queries and fragments](./6_1/)
 - [Creating the Chat Vuex module on your application](./6_2/)

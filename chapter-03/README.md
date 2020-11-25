@@ -1,4 +1,5 @@
-# Chapter 3 - AWS Amplify Environment and GraphQL
+### Chapter 3
+# AWS Amplify Environment and GraphQL
 
 - [Creating your AWS Amplify environment](./3_1/)
 - [Creating your first GraphQL API](./3_2/)
