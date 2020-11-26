@@ -30,21 +30,16 @@
 </template>
 
 <script>
-  import MaterialCardBox from './components/MaterialCardBox.vue';
-  import MaterialButton from './components/MaterialButton.vue';
+import MaterialCardBox from './components/MaterialCardBox.vue';
+import MaterialButton from './components/MaterialButton.vue';
 
-  export default {
-    name: 'App',
-    components: {
-      MaterialButton,
-      MaterialCardBox,
-    },
-    methods: {
-      Aalert(v) {
-        alert(v);
-      },
-    },
-  };
+export default {
+  name: 'App',
+  components: {
+    MaterialButton,
+    MaterialCardBox,
+  },
+};
 </script>
 <style>
   body {

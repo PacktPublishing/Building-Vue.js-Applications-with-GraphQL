@@ -7,13 +7,13 @@
 
 <script>
 import CurrentTime from './components/CurrentTime.vue';
-import TaskInput from './components/TaskInput';
+import TaskInput from './components/TaskInput.vue';
 
 export default {
   name: 'TodoApp',
   components: {
     CurrentTime,
     TaskInput,
-  }
-}
+  },
+};
 </script>

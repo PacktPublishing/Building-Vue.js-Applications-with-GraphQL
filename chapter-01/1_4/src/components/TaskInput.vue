@@ -2,11 +2,11 @@
   <div class='cardBox'>
     <div class='container tasker'>
       <strong>My task is:</strong>
-      <input 
-        type='text' 
-        :value='task' 
-        @input='task = $event.target.value' 
-        class='taskInput' 
+      <input
+        type='text'
+        :value='task'
+        @input='task = $event.target.value'
+        class='taskInput'
       />
       <button v-on:click='addTask'>Add Task</button>
     </div>
@@ -16,14 +16,14 @@
 export default {
   name: 'TaskInput',
   data: () => ({
-    task: ''
+    task: '',
   }),
   methods: {
     addTask() {
       this.$emit('add-task', this.task);
       this.task = '';
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>

@@ -1,4 +1,4 @@
-# 1.9 - Creating filters and sorting for the list
+# 1.9 - Creating conditional filters to sort list data
 
 ## Project setup
 

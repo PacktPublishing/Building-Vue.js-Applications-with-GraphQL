@@ -44,6 +44,7 @@
             <li
               v-for="(taskItem, index) in displayList"
               :key="`${index}_${Math.random()}`"
+              :class="!!taskItem.finishedAt ? 'taskDone' : ''"
             >
               <input type="checkbox"
                 :checked="!!taskItem.finishedAt"
@@ -62,14 +63,14 @@
   </div>
 </template>
 <script>
-import CurrentTime from "./components/CurrentTime.vue";
-import TaskInput from "./components/TaskInput";
+import CurrentTime from './components/CurrentTime.vue';
+import TaskInput from './components/TaskInput.vue';
 
 export default {
-  name: "TodoApp",
+  name: 'TodoApp',
   components: {
     CurrentTime,
-    TaskInput
+    TaskInput,
   },
   data: () => ({
     taskList: [],
@@ -81,47 +82,46 @@ export default {
     baseList() {
       return [...this.taskList]
         .map((t, index) => ({
-            ...t,
-            id: index + 1
-          }));
+          ...t,
+          id: index + 1,
+        }));
     },
     filteredList() {
       return this.hideDone
         ? [...this.baseList]
-            .filter(t => !t.finishedAt)
+          .filter((t) => !t.finishedAt)
         : [...this.baseList];
     },
     sortedList() {
       return [...this.filteredList]
-          .sort((a, b) => (
-            this.sortById
-              ? b.id - a.id
-              : ((a.finishedAt || 0) - (b.finishedAt) || 0 )
-          ));
+        .sort((a, b) => (
+          this.sortById
+            ? b.id - a.id
+            : ((a.finishedAt || 0) - (b.finishedAt) || 0)
+        ));
     },
     displayList() {
       const taskList = [...this.sortedList];
 
       return this.reverse
-      ? taskList.reverse()
-      : taskList;
-    }
+        ? taskList.reverse()
+        : taskList;
+    },
   },
   methods: {
     formatDate(value) {
-      if (!value) return "";
-      if (typeof value !== "number") return value;
+      if (!value) return '';
+      if (typeof value !== 'number') return value;
 
-      const browserLocale =
-        navigator.languages && navigator.languages.length
-          ? navigator.languages[0]
-          : navigator.language;
+      const browserLocale = navigator.languages && navigator.languages.length
+        ? navigator.languages[0]
+        : navigator.language;
       const intlDateTime = new Intl.DateTimeFormat(browserLocale, {
-        year: "numeric",
-        month: "numeric",
-        day: "numeric",
-        hour: "numeric",
-        minute: "numeric"
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        hour: 'numeric',
+        minute: 'numeric',
       });
 
       return intlDateTime.format(new Date(value));
@@ -130,7 +130,7 @@ export default {
       this.taskList.push({
         task,
         createdAt: Date.now(),
-        finishedAt: undefined
+        finishedAt: undefined,
       });
     },
     changeStatus(taskId) {
@@ -141,13 +141,37 @@ export default {
       } else {
         task.finishedAt = Date.now();
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
-.taskList li {
-  list-style: none;
-  text-align: left;
-}
+  .taskList li {
+    list-style: none;
+    text-align: left;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+
+  .taskList li:last-child {
+    border-bottom: 0px;
+  }
+
+  .taskList li:nth-child(even){
+    background-color: rgba(0,0,0,0.05);
+  }
+
+  @keyframes colorChange {
+    from{
+      background-color: inherit;
+    }
+    to{
+      background-color: rgba(0, 160, 24, 0.577);
+    }
+  }
+
+  .taskList li.taskDone{
+    animation: colorChange 1s ease;
+    background-color: rgba(0, 160, 24, 0.577);
+  }
 </style>

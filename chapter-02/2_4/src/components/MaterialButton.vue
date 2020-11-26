@@ -1,16 +1,16 @@
-<template functional>
+<template>
   <button
     tabindex="0"
     class="button"
     :class="{
-      round: props.isRound,
-      isFlat: props.isFlat,
+      round: $props.isRound,
+      isFlat: $props.isFlat,
     }"
     :style="{
-      background: props.backgroundColor,
-      color: props.textColor
+      background: $props.backgroundColor,
+      color: $props.textColor
     }"
-    v-on="listeners"
+    v-bind="$attrs"
   >
     <div
       tabindex="-1"
@@ -21,35 +21,35 @@
 </template>
 
 <script>
-  import isColor from 'is-color';
+import isColor from 'is-color';
 
-  export default {
-    name: 'MaterialButton',
-    props: {
-      backgroundColor: {
-        type: String,
-        required: false,
-        default: '#fff',
-        validator: v => typeof v === 'string' && isColor(v),
-      },
-      textColor: {
-        type: String,
-        required: false,
-        default: '#000',
-        validator: v => typeof v === 'string' && isColor(v),
-      },
-      isRound: {
-        type: Boolean,
-        required: false,
-        default: false,
-      },
-      isFlat: {
-        type: Boolean,
-        required: false,
-        default: false,
-      },
+export default {
+  name: 'MaterialButton',
+  props: {
+    backgroundColor: {
+      type: String,
+      required: false,
+      default: '#fff',
+      validator: (v) => typeof v === 'string' && isColor(v),
     },
-  };
+    textColor: {
+      type: String,
+      required: false,
+      default: '#000',
+      validator: (v) => typeof v === 'string' && isColor(v),
+    },
+    isRound: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+    isFlat: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
+};
 </script>
 
 <style scoped>

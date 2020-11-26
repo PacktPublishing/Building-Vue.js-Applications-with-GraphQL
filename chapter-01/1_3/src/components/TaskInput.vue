@@ -11,14 +11,14 @@
 export default {
   name: 'TaskInput',
   data: () => ({
-    task: ''
+    task: '',
   }),
   methods: {
     addTask() {
       this.$emit('add-task', this.task);
       this.task = '';
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>

@@ -61,71 +61,71 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'MaterialCardBox',
-    inheritAttrs: false,
-    props: {
-      header: {
-        type: String,
-        required: false,
-        default: '',
-        validator: v => typeof v === 'string',
-      },
-      subHeader: {
-        type: String,
-        required: false,
-        default: '',
-        validator: v => typeof v === 'string',
-      },
-      mainText: {
-        type: String,
-        required: false,
-        default: '',
-        validator: v => typeof v === 'string',
-      },
-      showMedia: {
-        type: Boolean,
-        required: false,
-        default: false,
-        validator: v => typeof v === 'boolean',
-      },
-      imgSrc: {
-        type: String,
-        required: false,
-        default: '',
-        validator: v => typeof v === 'string',
-      },
-      showActions: {
-        type: Boolean,
-        required: false,
-        default: false,
-        validator: v => typeof v === 'boolean',
-      },
-      elevation: {
-        type: Number,
-        required: false,
-        default: 2,
-        validator: v => typeof v === 'number',
-      },
+export default {
+  name: 'MaterialCardBox',
+  inheritAttrs: false,
+  props: {
+    header: {
+      type: String,
+      required: false,
+      default: '',
+      validator: (v) => typeof v === 'string',
     },
-    computed: {
-      showMediaContent() {
-        return (this.$slots.media || this.imgSrc) && this.showMedia;
-      },
-      showActionsButtons() {
-        return this.showActions && this.$slots.action;
-      },
-      showHeader() {
-        return this.$slots.header || (this.header || this.subHeader);
-      },
-      showMainContent() {
-        return this.$slots.default || this.mainText;
-      },
-      cardElevation() {
-        return `elevation_${parseInt(this.elevation, 10)}`;
-      },
+    subHeader: {
+      type: String,
+      required: false,
+      default: '',
+      validator: (v) => typeof v === 'string',
     },
-  };
+    mainText: {
+      type: String,
+      required: false,
+      default: '',
+      validator: (v) => typeof v === 'string',
+    },
+    showMedia: {
+      type: Boolean,
+      required: false,
+      default: false,
+      validator: (v) => typeof v === 'boolean',
+    },
+    imgSrc: {
+      type: String,
+      required: false,
+      default: '',
+      validator: (v) => typeof v === 'string',
+    },
+    showActions: {
+      type: Boolean,
+      required: false,
+      default: false,
+      validator: (v) => typeof v === 'boolean',
+    },
+    elevation: {
+      type: Number,
+      required: false,
+      default: 2,
+      validator: (v) => typeof v === 'number',
+    },
+  },
+  computed: {
+    showMediaContent() {
+      return (this.$slots.media || this.imgSrc) && this.showMedia;
+    },
+    showActionsButtons() {
+      return this.showActions && this.$slots.action;
+    },
+    showHeader() {
+      return this.$slots.header || (this.header || this.subHeader);
+    },
+    showMainContent() {
+      return this.$slots.default || this.mainText;
+    },
+    cardElevation() {
+      return `elevation_${parseInt(this.elevation, 10)}`;
+    },
+  },
+};
 </script>
 <style scoped>
   @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");

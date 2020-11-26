@@ -10,7 +10,7 @@
 export default {
   name: 'TaskInput',
   data: () => ({
-    task: ''
+    task: '',
   }),
 };
 </script>

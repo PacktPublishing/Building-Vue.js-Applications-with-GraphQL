@@ -11,20 +11,19 @@ export default {
   name: 'CurrentTime',
   computed: {
     getCurrentDate() {
-      const browserLocale =
-        navigator.languages && navigator.languages.length
-          ? navigator.languages[0]
-          : navigator.language;
+      const browserLocale = navigator.languages && navigator.languages.length
+        ? navigator.languages[0]
+        : navigator.language;
       const intlDateTime = new Intl.DateTimeFormat(browserLocale, {
         year: 'numeric',
         month: 'numeric',
         day: 'numeric',
         hour: 'numeric',
-        minute: 'numeric'
+        minute: 'numeric',
       });
 
       return intlDateTime.format(new Date());
-    }
-  }
+    },
+  },
 };
 </script>

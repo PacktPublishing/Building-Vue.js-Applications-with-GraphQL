@@ -1,4 +1,4 @@
-# 1.10 - Creating conditional filters to sort list data
+# 1.10 - Adding custom styles and transactions
 
 ## Project setup
 

@@ -7,15 +7,15 @@
         <div class='container'>
           <h2>My Tasks</h2>
           <ul class='taskList'>
-            <li 
+            <li
               v-for='(taskItem, index) in displayList'
               :key='`${index}_${Math.random()}`'
             >
-              <input type='checkbox' 
-                :checked='!!taskItem.finishedAt' 
+              <input type='checkbox'
+                :checked='!!taskItem.finishedAt'
                 @input='changeStatus(index)'
-              /> 
-              {{ taskItem.task }} 
+              />
+              {{ taskItem.task }}
               <span v-if='taskItem.finishedAt'>{{ taskItem.finishedAt }}</span>
             </li>
           </ul>
@@ -27,19 +27,19 @@
 
 <script>
 import CurrentTime from './components/CurrentTime.vue';
-import TaskInput from './components/TaskInput';
+import TaskInput from './components/TaskInput.vue';
 
 export default {
   name: 'TodoApp',
   components: {
     CurrentTime,
-    TaskInput
+    TaskInput,
   },
   data: () => ({
-    taskList: []
+    taskList: [],
   }),
   computed: {
-    displayList(){
+    displayList() {
       return this.taskList;
     },
   },
@@ -48,18 +48,18 @@ export default {
       this.taskList.push({
         task,
         createdAt: Date.now(),
-        finishedAt: undefined
+        finishedAt: undefined,
       });
     },
-    changeStatus(taskIndex){
+    changeStatus(taskIndex) {
       const task = this.taskList[taskIndex];
-      if(task.finishedAt){
+      if (task.finishedAt) {
         task.finishedAt = undefined;
       } else {
         task.finishedAt = Date.now();
       }
-    }
-  }
+    },
+  },
 };
 </script>
 <style scoped>
