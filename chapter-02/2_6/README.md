@@ -1,4 +1,4 @@
-# 2.6 - Creating a dynamic injected component
+# 2.6 - Creating a dynamically injected component
 
 ## Project setup
 

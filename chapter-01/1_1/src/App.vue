@@ -10,7 +10,7 @@ import CurrentTime from './components/CurrentTime.vue';
 export default {
   name: 'TodoApp',
   components: {
-    CurrentTime
-  }
-}
+    CurrentTime,
+  },
+};
 </script>
