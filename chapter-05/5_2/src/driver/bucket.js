@@ -18,8 +18,8 @@ export async function uploadFile(file, name = uid(), type = 'image/png') {
 
     return {
       ...uploadedFile,
-      bucket: AwsConfig.aws_user_files_s3_bucket,
-      region: AwsConfig.aws_user_files_s3_bucket_region,
+      bucket: AwsExports.aws_user_files_s3_bucket,
+      region: AwsExports.aws_user_files_s3_bucket_region,
     };
   } catch (err) {
     return Promise.reject(err);

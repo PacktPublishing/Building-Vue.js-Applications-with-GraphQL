@@ -10,13 +10,7 @@
     :label="label"
     outlined
     lazy-rules
-    @blur="$emit('blur', $event)"
-    @keydown="$emit('keydown', $event)"
-    @keypress="$emit('keypress', $event)"
-    @keyup="$emit('keyup', $event)"
-    @change="$emit('change', $event)"
-    @input="$emit('input', $event)"
-    @invalid="$emit('invalid', $event)"
+    v-on="$listeners"
   >
     <template v-slot:append>
       <q-icon
