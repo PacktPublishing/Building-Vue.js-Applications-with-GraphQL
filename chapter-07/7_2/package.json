@@ -12,22 +12,22 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.9.9",
-    "aws-amplify": "^3.3.3",
+    "@quasar/extras": "^1.9.10",
+    "aws-amplify": "^3.3.11",
     "aws-appsync": "^4.0.1",
-    "axios": "^0.20.0",
-    "graphql": "^15.3.0",
+    "axios": "^0.21.0",
+    "graphql": "^15.4.0",
     "graphql-tag": "^2.11.0",
-    "quasar": "^1.14.1",
-    "vue-i18n": "^8.22.0"
+    "quasar": "^1.14.5",
+    "vue-i18n": "^8.22.2"
   },
   "devDependencies": {
-    "@quasar/app": "^2.1.1",
+    "@quasar/app": "^2.1.8",
     "@vue/eslint-config-airbnb": "^5.1.0",
     "babel-eslint": "^10.1.0",
-    "eslint": "^7.11.0",
+    "eslint": "^7.14.0",
     "eslint-loader": "^2.1.1",
-    "eslint-plugin-vue": "^7.0.1",
+    "eslint-plugin-vue": "^7.1.0",
     "workbox-webpack-plugin": "^5.1.4"
   },
   "engines": {
