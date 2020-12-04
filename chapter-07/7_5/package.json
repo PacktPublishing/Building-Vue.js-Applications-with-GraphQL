@@ -1,5 +1,5 @@
 {
-  "name": "6.5",
+  "name": "7.5",
   "version": "0.0.1",
   "description": "Quasar Chat Application",
   "productName": "Chat App",
@@ -8,6 +8,7 @@
   "author": "Heitor Ramon Ribeiro <heitor.ramon@gmail.com>",
   "private": true,
   "scripts": {
+    "serve:pwa": "quasar dev -m pwa",
     "lint": "eslint --ext .js,.vue src src-pwa --fix",
     "test": "echo \"No test specified\" && exit 0"
   },

@@ -1,4 +1,4 @@
-# 6.2 - Creating the application update notification
+# 7.2 - Creating the application update notification
 
 A Quasar Framework App
 

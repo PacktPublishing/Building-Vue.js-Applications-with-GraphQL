@@ -1,4 +1,4 @@
-# 6.5 - Adding a continuous deployment with GitHub integration
+# 7.5 - Adding a continuous deployment with GitHub integration
 
 A Quasar Framework App
 

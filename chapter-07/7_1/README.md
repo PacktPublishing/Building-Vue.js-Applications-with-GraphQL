@@ -1,4 +1,4 @@
-# 6.1 - Transforming into a PWA application
+# 7.1 - Transforming into a PWA application
 
 A Quasar Framework App
 
