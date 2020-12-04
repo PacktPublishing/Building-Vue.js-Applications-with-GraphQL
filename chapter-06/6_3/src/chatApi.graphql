@@ -1,8 +1,8 @@
 type User
-@model(
-  subscriptions: null
-)
-@auth(rules: [{ allow: owner, ownerField: "id", queries: null }]) {
+@model
+@auth(rules: [
+  { allow: owner, ownerField: "owner" },
+]) {
   id: ID!
   email: String!
   username: String!
@@ -32,7 +32,7 @@ type Conversation
 
 type Message
 @model(subscriptions: null, queries: null)
-@auth(rules: [{ allow: owner, ownerField: "authorId", operations: [create, update, delete]}]) {
+@auth(rules: [{ allow: owner, ownerField: "authorId" }]) {
   id: ID!
   author: User @connection(name: "UserMessages", keyField: "authorId")
   authorId: String
@@ -63,12 +63,6 @@ type Subscription {
   @aws_subscribe(mutations: ["createConversationLink"])
   onCreateMessage(messageConversationId: ID!): Message
   @aws_subscribe(mutations: ["createMessage"])
-  onCreateUser: User
-  @aws_subscribe(mutations: ["createUser"])
-  onDeleteUser: User
-  @aws_subscribe(mutations: ["deleteUser"])
-  onUpdateUser: User
-  @aws_subscribe(mutations: ["updateUser"])
 }
 
 type S3Object {
