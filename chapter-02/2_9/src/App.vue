@@ -38,12 +38,14 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from 'vue';
+
 export default {
   name: 'App',
   components: {
-    StarRating: () => import('./components/StarRating.vue'),
-    MaterialButton: () => import('./components/MaterialButton.vue'),
-    MaterialCardBox: () => import('./components/MaterialCardBox.vue'),
+    StarRating: defineAsyncComponent(() => import('./components/StarRating.vue')),
+    MaterialButton: defineAsyncComponent(() => import('./components/MaterialButton.vue')),
+    MaterialCardBox: defineAsyncComponent(() => import('./components/MaterialCardBox.vue')),
   },
   methods: {
     resetVote() {

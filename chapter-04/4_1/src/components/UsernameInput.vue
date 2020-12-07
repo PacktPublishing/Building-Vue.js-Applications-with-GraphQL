@@ -1,7 +1,7 @@
 <template>
   <q-input
     :value="value"
-    :rules="[ val => (val && val.length > 0 || 'Please type a valid Username')]"
+    :rules="[ val => (val && val.length > 5 || 'Please type a valid Username')]"
     outlined
     label="Your Username"
     lazy-rules
