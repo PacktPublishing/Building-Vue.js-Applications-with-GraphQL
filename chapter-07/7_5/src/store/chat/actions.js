@@ -32,6 +32,7 @@ async function newConversation(_vuex, { authorId, otherUserId }) {
           members,
         }),
     );
+
     const relation = { conversationLinkConversationId };
 
     await Promise.all([
