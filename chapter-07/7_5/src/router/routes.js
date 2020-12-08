@@ -86,6 +86,7 @@ const routes = [
     ],
   },
 ];
+
 if (process.env.MODE !== 'ssr') {
   routes.push({
     path: '*',

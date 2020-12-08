@@ -6,8 +6,9 @@
           dense
           flat
           round
-          :icon="goBack.name !== 'Edit' ? 'keyboard_arrow_left' : 'person'"
-          :to="goBack"
+          replace
+          :icon="$route.meta.goBack ? 'keyboard_arrow_left' : 'person'"
+          :to="$route.meta.goBack ? $route.meta.goBack : {name: 'Edit'}"
         />
         <q-toolbar-title>
           Chat App
@@ -39,12 +40,6 @@ export default {
     async logOff() {
       await signOut();
       window.location.reload();
-    },
-  },
-  computed: {
-    goBack() {
-      const { $meta } = this.$route;
-      return $meta ? $meta.goBack : { name: 'Edit' };
     },
   },
 };

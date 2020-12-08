@@ -51,9 +51,15 @@ export default {
     email: '',
     password: '',
   }),
+  async beforeMount() {
+    if (this.getUserId) {
+      await this.$router.replace({ name: 'Contacts' });
+    }
+  },
   computed: {
     ...mapGetters('user', [
       'isLoading',
+      'getUserId',
     ]),
   },
   methods: {
