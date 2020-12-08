@@ -101,13 +101,13 @@ export default {
         this.pending = false;
       }
     },
-    async createConversation(otherUserName) {
+    async createConversation(otherUserId) {
       try {
         const conversation = await this.newConversation({
-          username: this.getUser.id,
-          otherUserName,
+          authorId: this.getUser.id,
+          otherUserId,
         });
-        this.$router.push({
+        await this.$router.push({
           name: 'Messages',
           params: conversation,
         });

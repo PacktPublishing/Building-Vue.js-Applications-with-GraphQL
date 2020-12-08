@@ -6,6 +6,9 @@ const routes = [
       {
         path: '',
         name: 'Index',
+        meta: {
+          authenticated: false,
+        },
         component: () => import('pages/Index.vue'),
       },
     ],
@@ -17,6 +20,9 @@ const routes = [
       {
         path: 'contacts',
         name: 'Contacts',
+        meta: {
+          authenticated: true,
+        },
         component: () => import('pages/Contacts.vue'),
       },
     ],
@@ -29,6 +35,7 @@ const routes = [
         path: ':id/:name',
         name: 'Messages',
         meta: {
+          authenticated: true,
           goBack: {
             name: 'Contacts',
           },
@@ -46,6 +53,7 @@ const routes = [
         alias: 'edit',
         name: 'Edit',
         meta: {
+          authenticated: true,
           goBack: {
             name: 'Contacts',
           },
@@ -62,11 +70,17 @@ const routes = [
         path: '',
         alias: 'sign-up',
         name: 'SignUp',
+        meta: {
+          authenticated: false,
+        },
         component: () => import('pages/SignUp.vue'),
       },
       {
         path: 'validate',
         name: 'Validate',
+        meta: {
+          authenticated: false,
+        },
         component: () => import('pages/Validate.vue'),
       },
     ],

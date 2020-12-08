@@ -24,6 +24,7 @@ module.exports = function (/* ctx */) {
     boot: [
       'amplify',
       'axios',
+      'routeGuard',
       'a2hs',
     ],
 

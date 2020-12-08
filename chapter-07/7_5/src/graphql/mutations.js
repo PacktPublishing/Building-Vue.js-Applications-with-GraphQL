@@ -23,12 +23,8 @@ export const createUser = /* GraphQL */ `
           conversationLinkConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       messages {
         items {
@@ -38,18 +34,11 @@ export const createUser = /* GraphQL */ `
           messageConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
       owner
     }
   }
@@ -76,12 +65,8 @@ export const updateUser = /* GraphQL */ `
           conversationLinkConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       messages {
         items {
@@ -91,18 +76,11 @@ export const updateUser = /* GraphQL */ `
           messageConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
       owner
     }
   }
@@ -129,12 +107,8 @@ export const deleteUser = /* GraphQL */ `
           conversationLinkConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       messages {
         items {
@@ -144,18 +118,11 @@ export const deleteUser = /* GraphQL */ `
           messageConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
       owner
     }
   }
@@ -175,12 +142,8 @@ export const createConversation = /* GraphQL */ `
           messageConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       associated {
         items {
@@ -189,20 +152,13 @@ export const createConversation = /* GraphQL */ `
           conversationLinkConversationId
           createdAt
           updatedAt
-          _version
-          _deleted
-          _lastChangedAt
         }
         nextToken
-        startedAt
       }
       name
       members
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -225,17 +181,12 @@ export const createMessage = /* GraphQL */ `
         name
         conversations {
           nextToken
-          startedAt
         }
         messages {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
         owner
       }
       authorId
@@ -244,26 +195,18 @@ export const createMessage = /* GraphQL */ `
         id
         messages {
           nextToken
-          startedAt
         }
         associated {
           nextToken
-          startedAt
         }
         name
         members
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       messageConversationId
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -286,17 +229,12 @@ export const updateMessage = /* GraphQL */ `
         name
         conversations {
           nextToken
-          startedAt
         }
         messages {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
         owner
       }
       authorId
@@ -305,26 +243,18 @@ export const updateMessage = /* GraphQL */ `
         id
         messages {
           nextToken
-          startedAt
         }
         associated {
           nextToken
-          startedAt
         }
         name
         members
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       messageConversationId
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -347,17 +277,12 @@ export const deleteMessage = /* GraphQL */ `
         name
         conversations {
           nextToken
-          startedAt
         }
         messages {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
         owner
       }
       authorId
@@ -366,26 +291,18 @@ export const deleteMessage = /* GraphQL */ `
         id
         messages {
           nextToken
-          startedAt
         }
         associated {
           nextToken
-          startedAt
         }
         name
         members
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       messageConversationId
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -408,17 +325,12 @@ export const createConversationLink = /* GraphQL */ `
         name
         conversations {
           nextToken
-          startedAt
         }
         messages {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
         owner
       }
       conversationLinkUserId
@@ -426,26 +338,18 @@ export const createConversationLink = /* GraphQL */ `
         id
         messages {
           nextToken
-          startedAt
         }
         associated {
           nextToken
-          startedAt
         }
         name
         members
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       conversationLinkConversationId
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;
@@ -468,17 +372,12 @@ export const updateConversationLink = /* GraphQL */ `
         name
         conversations {
           nextToken
-          startedAt
         }
         messages {
           nextToken
-          startedAt
         }
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
         owner
       }
       conversationLinkUserId
@@ -486,26 +385,18 @@ export const updateConversationLink = /* GraphQL */ `
         id
         messages {
           nextToken
-          startedAt
         }
         associated {
           nextToken
-          startedAt
         }
         name
         members
         createdAt
         updatedAt
-        _version
-        _deleted
-        _lastChangedAt
       }
       conversationLinkConversationId
       createdAt
       updatedAt
-      _version
-      _deleted
-      _lastChangedAt
     }
   }
 `;

@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn
-          v-go-back="$route.$meta.goBack"
+          v-go-back="goBack"
           dense
           flat
           round
@@ -48,6 +48,12 @@ export default {
     async logOff() {
       await signOut();
       window.location.reload();
+    },
+  },
+  computed: {
+    goBack() {
+      const { $meta } = this.$route;
+      return $meta ? $meta.goBack : { name: 'Contacts' };
     },
   },
 };
