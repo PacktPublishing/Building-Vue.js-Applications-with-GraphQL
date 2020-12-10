@@ -34,6 +34,7 @@ async function initialLogin({ commit }) {
 async function signUpNewUser({ commit }, {
   email = '',
   name = '',
+  username = '',
   password = '',
 }) {
   try {
@@ -46,7 +47,7 @@ async function signUpNewUser({ commit }, {
       email,
       password,
       name,
-      username: userData.userSub,
+      username,
     });
 
     return Promise.resolve(userData);
@@ -62,19 +63,21 @@ async function createNewUser({ commit, state }, code) {
     const {
       email,
       name,
+      username,
       password,
     } = state;
     const userData = await validateUser(email, code);
 
     await signIn(`${email}`, `${window.atob(password)}`);
 
-    const AuthUser = await getCurrentAuthUser();
+    const { id } = await getCurrentAuthUser();
 
     await AuthAPI.graphql(graphqlOperation(
       createUser,
       {
         input: {
-          username: AuthUser.username,
+          id,
+          username,
           email,
           name,
         },
@@ -119,7 +122,7 @@ async function editUser({ commit, state }, {
   try {
     commit(MT.LOADING);
 
-      const updateObject = {
+    const updateObject = {
       ...{
         name: state.name,
         username: state.username,

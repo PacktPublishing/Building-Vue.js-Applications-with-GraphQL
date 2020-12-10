@@ -13,9 +13,9 @@ import { uid } from 'quasar';
 import { AuthAPI } from 'src/driver/appsync';
 import MT from './types';
 
-async function newConversation(_vuex, { username, otherUserName }) {
+async function newConversation(_vuex, { authorId, otherUserId }) {
   try {
-    const members = [username, otherUserName];
+    const members = [authorId, otherUserId];
 
     const conversationName = members.join(' and ');
 
@@ -32,19 +32,20 @@ async function newConversation(_vuex, { username, otherUserName }) {
           members,
         }),
     );
+
     const relation = { conversationLinkConversationId };
 
     await Promise.all([
       AuthAPI.graphql(
         graphqlOperation(createConversationLink, {
           ...relation,
-          conversationLinkUserId: username,
+          conversationLinkUserId: authorId,
         }),
       ),
       AuthAPI.graphql(
         graphqlOperation(createConversationLink, {
           ...relation,
-          conversationLinkUserId: otherUserName,
+          conversationLinkUserId: otherUserId,
         }),
       )]);
 
@@ -84,7 +85,7 @@ async function getMessages({ commit }) {
   try {
     commit(MT.LOADING);
 
-    const { username } = await getCurrentAuthUser();
+    const { id } = await getCurrentAuthUser();
 
     const {
       data: {
@@ -95,7 +96,7 @@ async function getMessages({ commit }) {
     } = await AuthAPI.graphql(graphqlOperation(
       getUserAndConversations,
       {
-        id: username,
+        id,
       },
     ));
 
