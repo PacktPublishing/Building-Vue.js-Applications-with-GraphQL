@@ -79,7 +79,7 @@ export default {
           email: this.email,
           password: this.password,
         });
-        this.$router.replace({ name: 'Validate' });
+        await this.$router.replace({ name: 'Validate' });
       } catch (e) {
         this.$q.dialog({
           message: e.message,
