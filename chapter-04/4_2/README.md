@@ -1,4 +1,4 @@
-# 2.2 - Creating the application layouts
+# 4.2 - Creating the application layouts
 
 A Quasar Framework App
 

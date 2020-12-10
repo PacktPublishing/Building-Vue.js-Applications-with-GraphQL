@@ -1,4 +1,4 @@
-# 3.4 - Creating the Messages page of your application
+# 6.4 - Creating the Messages page of your application
 
 A Quasar Framework App
 

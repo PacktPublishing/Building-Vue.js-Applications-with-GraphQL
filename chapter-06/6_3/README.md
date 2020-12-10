@@ -1,4 +1,4 @@
-# 3.3 - Creating the Contacts page of your application
+# 6.3 - Creating the Contacts page of your application
 
 A Quasar Framework App
 

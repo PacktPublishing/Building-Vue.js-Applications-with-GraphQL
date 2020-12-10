@@ -1,4 +1,4 @@
-# 3.2 - Creating the Chat Vuex module on your application
+# 6.2 - Creating the Chat Vuex module on your application
 
 A Quasar Framework App
 

@@ -24,6 +24,7 @@ module.exports = function (/* ctx */) {
     boot: [
       'amplify',
       'axios',
+      'routeGuard',
     ],
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
