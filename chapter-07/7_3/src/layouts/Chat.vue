@@ -6,8 +6,8 @@
           dense
           flat
           round
-          :icon="$route.$meta.goBack ? 'keyboard_arrow_left' : 'person'"
-          :to="$route.$meta.goBack ? $route.$meta.goBack : {name: 'Edit'}"
+          :icon="$route.meta.goBack ? 'keyboard_arrow_left' : 'person'"
+          :to="$route.meta.goBack ? $route.meta.goBack : {name: 'Edit'}"
         />
         <q-toolbar-title>
           Chat App

@@ -1,4 +1,4 @@
-# 2.4 - Creating User pages and routes for your application
+# 5.2 - Creating User pages and routes for your application
 
 A Quasar Framework App
 

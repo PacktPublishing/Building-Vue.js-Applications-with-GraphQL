@@ -8,20 +8,32 @@
       :text="[message.content]"
       :sent="getUser.id === message.authorId"
       :name="message.author.name"
-      :avatar="getAvatar(message.author.avatar, message.author.name)"
       class="col-12"
-    />
+    >
+      <template v-slot:avatar>
+        <avatar-display
+          :avatar-object="message.author.avatar"
+          :name="message.author.name"
+          tag="img"
+          class="q-message-avatar"
+          :class="getUser.id !== message.authorId
+          ? 'q-message-avatar--received'
+          : 'q-message-avatar--sent'"
+        />
+      </template>
+    </q-chat-message>
   </q-page>
 </template>
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
 import { date } from 'quasar';
-import getAvatar from 'src/mixins/getAvatar';
 
 export default {
   name: 'MessagesPage',
-  mixins: [getAvatar],
+  components: {
+    AvatarDisplay: () => import('components/AvatarDisplay'),
+  },
   data: () => ({
     interval: null,
   }),

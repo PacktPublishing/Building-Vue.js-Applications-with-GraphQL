@@ -51,9 +51,15 @@ export default {
     email: '',
     password: '',
   }),
+  async beforeMount() {
+    if (this.getUserId) {
+      await this.$router.replace({ name: 'Contacts' });
+    }
+  },
   computed: {
     ...mapGetters('user', [
       'isLoading',
+      'getUserId',
     ]),
   },
   methods: {
@@ -66,7 +72,7 @@ export default {
           email: this.email,
           password: this.password,
         });
-        this.$router.push({ name: 'Contacts' });
+        await this.$router.push({ name: 'Contacts' });
       } catch (e) {
         this.$q.dialog({
           message: e.message,

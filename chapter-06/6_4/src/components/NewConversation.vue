@@ -24,9 +24,9 @@
           >
             <q-item-section avatar>
               <q-avatar>
-                <q-img
-                  :src="getAvatar(contact.avatar, contact.name)"
-                  spinner-color="primary"
+                <avatar-display
+                  :avatar-object="contact.avatar"
+                  :name="contact.name"
                 />
               </q-avatar>
             </q-item-section>
@@ -54,11 +54,12 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import getAvatar from 'src/mixins/getAvatar';
 
 export default {
   name: 'NewConversation',
-  mixins: [getAvatar],
+  components: {
+    AvatarDisplay: () => import('components/AvatarDisplay'),
+  },
   props: {
     value: {
       type: Boolean,
@@ -101,13 +102,13 @@ export default {
         this.pending = false;
       }
     },
-    async createConversation(otherUserName) {
+    async createConversation(otherUserId) {
       try {
         const conversation = await this.newConversation({
-          username: this.getUser.id,
-          otherUserName,
+          authorId: this.getUser.id,
+          otherUserId,
         });
-        this.$router.push({
+        await this.$router.push({
           name: 'Messages',
           params: conversation,
         });

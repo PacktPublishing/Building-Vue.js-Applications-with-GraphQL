@@ -1,4 +1,4 @@
-# 3.1 - Creating GraphQL queries and fragments
+# 6.1 - Creating GraphQL queries and fragments
 
 A Quasar Framework App
 

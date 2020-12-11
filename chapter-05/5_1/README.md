@@ -1,4 +1,4 @@
-# 4.1 - Creating the User Vuex module on your application
+# 5.1 - Creating the User Vuex module on your application
 
 A Quasar Framework App
 
