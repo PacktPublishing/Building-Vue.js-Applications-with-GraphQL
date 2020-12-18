@@ -5,9 +5,8 @@
       <input
         type='text'
         :value='task'
-        @input='task = $event.target.value'
         class='taskInput'
-        :class="$v.task.$error ? 'fieldError' : ''"
+        @input='task = $event.target.value'
       />
       <button v-on:click='addTask'>Add Task</button>
     </div>
