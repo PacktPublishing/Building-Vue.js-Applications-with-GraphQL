@@ -107,7 +107,6 @@ export default {
     onReset() {
       this.name = this.getUser.name;
       this.username = this.getUser.username;
-      this.email = this.getUser.email;
       this.password = '';
       this.newPassword = '';
     },
