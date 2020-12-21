@@ -63,5 +63,6 @@ module.exports = {
     'func-names': 'off',
     // allow debugger during development only
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-console': 'off',
   },
 };
