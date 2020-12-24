@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-btn
-          v-go-back="$route.$meta.goBack"
+          v-go-back="$route.meta.goBack"
           dense
           flat
           round
