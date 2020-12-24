@@ -52,8 +52,8 @@ export default {
   },
   computed: {
     goBack() {
-      const { $meta } = this.$route;
-      return $meta ? $meta.goBack : { name: 'Contacts' };
+      const { meta } = this.$route;
+      return meta ? meta.goBack : { name: 'Contacts' };
     },
   },
 };
