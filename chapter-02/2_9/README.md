@@ -1,4 +1,4 @@
-# 2.8 - Creating a component mixin
+# 2.9 - Lazy loading your components
 
 ## Project setup
 
