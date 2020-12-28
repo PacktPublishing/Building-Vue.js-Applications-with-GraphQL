@@ -57,5 +57,5 @@ With the following software and hardware list you can run all code files present
 **Heitor Ribeiro**
 is a Head FrontEnd Engineer at INTI. With over 15 years of experience in JavaScript, frontend development, and UI/UX design, Heitor has become an expert in delivering solutions for an enterprise architecture system combined with the best user experience. Heitor is currently working on delivering tools and platforms for the biggest museums, theaters, and arenas in South America. He is managing and coding a solution that can bring together the past and future with the power of Vue.JS.
 
-## Other books by the authors
+## Other books by the author
 * [Vue.js 3 Cookbook](https://www.packtpub.com/product/vue-js-3-cookbook/9781838826222)
