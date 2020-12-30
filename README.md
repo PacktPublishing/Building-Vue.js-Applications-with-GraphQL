@@ -8,7 +8,7 @@ This is the code repository for [Building Vue.js Applications with GraphQL](http
 
 ## What is this book about?
 With the recipes in this book, you will learn how to build a complete real-time chat app from scratch. Starting by creating an AWS Amplify environment, you will delve into developing your first GraphQL Schema. You will then learn how to add the AppSync GraphQL client and create your first GraphQL mutation. The book also helps you to discover the simplicity and data fetching capabilities of GraphQL that make it easy for front-end developers to communicate with the server. You will later understand how to use Quasar Framework to create application components and layouts. Finally, you will find out how to create Vuex modules in your application to manage the app state, fetch data using the GraphQL client, and deploy your application to the web.
-By the end of this Vue.js cookbook, you’ll be well-versed with proof-of-concept full-stack applications that explore the power of GraphQL with AWS Amplify, and be able to use Quasar Framework to create your Vue applications.
+By the end of this Building Vue.js Applications with GraphQL, you’ll be well-versed with proof-of-concept full-stack applications that explore the power of GraphQL with AWS Amplify, and be able to use Quasar Framework to create your Vue applications.
 
 This book covers the following exciting features: 
 * Become familiar with AWS Amplify and learn how to set up your environment
