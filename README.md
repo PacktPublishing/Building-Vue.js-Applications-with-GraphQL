@@ -16,7 +16,7 @@ This book covers the following exciting features:
 * Use Quasar Framework to create simple and effective interfaces
 * Discover effective techniques to create queries for interacting with data
 * Explore Vuex for adding state management capabilities to your app
-* Learn techniques to deploy your applications effectively to the web
+* Discover techniques to deploy your applications effectively to the web
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800565070) today!
 
