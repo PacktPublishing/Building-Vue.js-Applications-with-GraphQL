@@ -1,6 +1,6 @@
 # Building Vue.js Applications with GraphQL
 
-<a href="https://www.packtpub.com/product/Building-Vuejs-Applications-with-GraphQL/9781800565074"><img src="https://static.packt-cdn.com/products/9781800565074/cover/smaller" alt="Building Vue.js Applications with GraphQL" height="256px" align="right"></a>
+<a href="https://amzn.to/2XcB24r"><img src="https://static.packt-cdn.com/products/9781800565074/cover/smaller" alt="Building Vue.js Applications with GraphQL" height="256px" align="right"></a>
 
 This is the code repository for [Building Vue.js Applications with GraphQL](https://www.packtpub.com/product/Building-Vuejs-Applications-with-GraphQL/9781800565074), published by Packt.
 
@@ -18,7 +18,7 @@ This book covers the following exciting features:
 * Explore Vuex for adding state management capabilities to your app
 * Discover techniques to deploy your applications effectively to the web
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1800565070) today!
+If you feel this book is for you, get your [copy](https://amzn.to/2XcB24r) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" alt="https://www.packtpub.com/" border="5" /></a>
 
@@ -67,4 +67,4 @@ With the following software and hardware list you can run all code files present
 is a Head FrontEnd Engineer at INTI. With over 15 years of experience in JavaScript, frontend development, and UI/UX design, Heitor has become an expert in delivering solutions for an enterprise architecture system combined with the best user experience. Heitor is currently working on delivering tools and platforms for the biggest museums, theaters, and arenas in South America. He is managing and coding a solution that can bring together the past and future with the power of Vue.JS.
 
 ## Other books by the author
-* [Vue.js 3 Cookbook](https://www.packtpub.com/product/vue-js-3-cookbook/9781838826222)
+* [Vue.js 3 Cookbook](https://amzn.to/2LlqMUU)
