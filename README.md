@@ -58,7 +58,7 @@ With the following software and hardware list you can run all code files present
 - [_Chapter 7_ - **Transforming your App to PWA and Deploying to the Web**](./chapter-07/)
 
 ### Related products <Other books you may enjoy>
-* Vue.js 3 Cookbook [[Packt]](https://www.packtpub.com/product/vue-js-3-cookbook/9781838826222) [[Amazon]](https://www.amazon.com/dp/183882622X)
+* Vue.js 3 Cookbook [[Packt]](https://www.packtpub.com/product/vue-js-3-cookbook/9781838826222) [[Amazon]](https://amzn.to/2LlqMUU)
 
 * Hands-on Nuxt.js Web Development [[Packt]](https://www.packtpub.com/product/hands-on-nuxt-js-web-development/9781789952698) [[Amazon]](https://www.amazon.com/dp/1789952697)
 
