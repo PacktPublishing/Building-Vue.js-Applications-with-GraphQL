@@ -48,6 +48,15 @@ With the following software and hardware list you can run all code files present
 | 3 to 7       | AWS-Appsync 4.X          | Windows, Mac OS X, and Linux (Any) |
 | 1 to 7       | Visual Studio Code 1.4.X and IntelliJ WebStorm 2020.2            | Windows, Mac OS X, and Linux (Any) |
 
+### Code examples
+- [_Chapter 1_ - **Data Binding, Events, and Computed Properties**](./chapter-01/)
+- [_Chapter 2_ - **Components, Mixins, and Functional Components**](./chapter-02/)
+- [_Chapter 3_ - **AWS Amplify Environment and GraphQL**](./chapter-03/)
+- [_Chapter 4_ - **Creating Custom Application Components and Layouts**](./chapter-04/)
+- [_Chapter 5_ - **Creating User Vuex, Pages, and Routes**](./chapter-05/)
+- [_Chapter 6_ - **Creating Chat and Message Vuex, Pages, and Routes**](./chapter-06/)
+- [_Chapter 7_ - **Transforming your App to PWA and Deploying to the Web**](./chapter-07/)
+
 ### Related products <Other books you may enjoy>
 * Vue.js 3 Cookbook [[Packt]](https://www.packtpub.com/product/vue-js-3-cookbook/9781838826222) [[Amazon]](https://www.amazon.com/dp/183882622X)
 
