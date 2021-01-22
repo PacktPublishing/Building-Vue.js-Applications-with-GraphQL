@@ -8,7 +8,7 @@ import {
   signIn,
   getCurrentAuthUser,
   changePassword,
-} from 'driver/auth';
+} from 'src/driver/auth';
 import MT from './types';
 
 async function initialLogin({ commit }) {
@@ -118,7 +118,7 @@ async function editUser({ commit, state }, {
   try {
     commit(MT.LOADING);
 
-      const updateObject = {
+    const updateObject = {
       ...{
         name: state.name,
         username: state.username,

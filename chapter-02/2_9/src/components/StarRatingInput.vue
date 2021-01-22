@@ -29,6 +29,7 @@ export default {
     StarRatingBaseMixin,
     StarRatingChildMixin,
   ],
+  emits: ['final-vote'],
   data: () => ({
     rank: 0,
   }),

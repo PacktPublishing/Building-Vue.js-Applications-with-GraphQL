@@ -51,12 +51,11 @@ export default {
   },
   methods: {
     resetVote() {
-      this.$refs.starRating.rank = 0;
+      this.$refs.starRating.vote(0);
       this.$refs.starRating.voted = false;
     },
     forceVote() {
-      this.$refs.starRating.rank = 5;
-      this.$refs.starRating.voted = true;
+      this.$refs.starRating.vote(5);
     },
   },
 };

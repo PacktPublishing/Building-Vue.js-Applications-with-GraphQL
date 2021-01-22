@@ -8,7 +8,7 @@ import {
 } from 'src/graphql/fragments';
 import {
   getCurrentAuthUser,
-} from 'driver/auth';
+} from 'src/driver/auth';
 import { uid } from 'quasar';
 import { AuthAPI } from 'src/driver/appsync';
 import MT from './types';
