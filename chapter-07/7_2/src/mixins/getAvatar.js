@@ -1,4 +1,4 @@
-import { getFile } from 'driver/bucket';
+import { getFile } from 'src/driver/bucket';
 
 export default {
   methods: {

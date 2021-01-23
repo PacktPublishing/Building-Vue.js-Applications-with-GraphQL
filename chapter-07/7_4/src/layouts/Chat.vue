@@ -31,7 +31,7 @@
 <script>
 import {
   signOut,
-} from 'driver/auth';
+} from 'src/driver/auth';
 
 export default {
   name: 'ChatLayout',

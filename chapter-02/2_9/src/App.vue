@@ -8,7 +8,7 @@
       img-src="https://picsum.photos/300/200"
     >
       <p>
-        <StarRating
+        <star-rating
           ref="starRating"
         />
       </p>
@@ -39,22 +39,22 @@
 
 <script>
 import { defineAsyncComponent } from 'vue';
+import StarRating from './components/StarRating.vue';
 
 export default {
   name: 'App',
   components: {
-    StarRating: defineAsyncComponent(() => import('./components/StarRating.vue')),
+    StarRating,
     MaterialButton: defineAsyncComponent(() => import('./components/MaterialButton.vue')),
     MaterialCardBox: defineAsyncComponent(() => import('./components/MaterialCardBox.vue')),
   },
   methods: {
     resetVote() {
-      this.$refs.starRating.rank = 0;
+      this.$refs.starRating.vote(0);
       this.$refs.starRating.voted = false;
     },
     forceVote() {
-      this.$refs.starRating.rank = 5;
-      this.$refs.starRating.voted = true;
+      this.$refs.starRating.vote(5);
     },
   },
 };

@@ -54,7 +54,7 @@
 
 <script>
 import { mapActions, mapGetters } from 'vuex';
-import { resendValidationCode } from 'driver/auth';
+import { resendValidationCode } from 'src/driver/auth';
 
 export default {
   name: 'Validate',
