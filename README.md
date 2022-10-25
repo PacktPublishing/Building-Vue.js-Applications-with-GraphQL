@@ -68,3 +68,7 @@ is a Head FrontEnd Engineer at INTI. With over 15 years of experience in JavaScr
 
 ## Other books by the author
 * [Vue.js 3 Cookbook](https://amzn.to/2LlqMUU)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800565074">https://packt.link/free-ebook/9781800565074 </a> </p>
